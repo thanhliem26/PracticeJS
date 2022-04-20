@@ -6,7 +6,7 @@
 
 #table__info td,
 #table__info th {
-  border: 1px solid #ddd;
+  border: 1px solid #0c0101;
   padding: 8px;
   background-color: rgb(29, 35, 45);
   color: white;
@@ -20,8 +20,17 @@
   color: white;
 }
 
-#table__info .table__text-end {
-  text-align: end;
+#table__info {
+  .table__text-start {
+    border-top: none !important;
+  }
+  .table__text-end {
+    text-align: end;
+
+    &.table__borderTop {
+      border-top: none !important;
+    }
+  }
 }
 
 #table__info .table__text-center {
@@ -40,14 +49,25 @@
   }
 }
 
+#table__info thead tr {
+  .table__border {
+    border-bottom: none !important;
+  }
+}
+
 #table__info tbody tr .infor__detail {
   position: absolute;
   width: 90%;
   background-color: rgb(51, 55, 63);
   top: 80%;
   z-index: 10;
-  padding: 10px;
+  padding: 20px 10px 10px;
   display: none;
+  box-shadow: -6px -6px 8px -4px rgba(12, 12, 12, 0.75),
+    6px -6px 8px -4px rgba(1, 14, 1, 0.75),
+    6px 6px 8px -4px rgba(26, 26, 2, 0.75),
+    -6px 6px 8px -4px rgba(9, 9, 58, 0.75);
+  border-radius: 5px;
 
   .infor__detail-title {
     display: flex;
@@ -55,9 +75,16 @@
 
     .detail__title-main {
       display: flex;
-      h6 {
-        padding-right: 10px;
-        font-size: 14px;
+      .title__main-group {
+        margin-right: 20px;
+        label {
+          font-size: 14px;
+          color: white;
+
+          &:hover {
+            color: #1789e3;
+          }
+        }
       }
     }
   }
