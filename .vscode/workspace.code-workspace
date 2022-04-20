@@ -1,0 +1,50 @@
+{
+  "folders": [
+	{
+		"name": "webpack_demo",
+		"path": ".."
+	},
+	{
+		"name": "TypeScriptDemo",
+		"path": "..\\..\\TypeScriptDemo"
+	},
+	{
+		"name": "JSDemo",
+		"path": "..\\..\\JSDemo"
+	},
+	{
+		"name": "FullStackClone",
+		"path": "..\\..\\..\\..\\FullStackClone"
+	},
+	{
+		"name": "Semeter",
+		"path": "..\\..\\..\\..\\BAI TAP\\Semeter"
+	},
+	{
+		"name": "Pratice",
+		"path": "..\\..\\Pratice"
+	},
+	{
+		"name": "GIT_project",
+		"path": "..\\..\\..\\Git\\GIT_project"
+	}
+],
+  "extensions": {
+    "recommendations": ["ritwickdey.live-sass", "ritwickdey.liveserver"]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Open index.html",
+        "file": "e:\\fullstack8\\BEM\\button\\index.html"
+      }
+    ]
+  },
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "GIT_project",
+    "git.ignoreLimitWarning": true
+  }
+}
