@@ -32,6 +32,10 @@
   border-top: none !important;
 }
 
+#table__info .table__text-end p i {
+  font-size: 12px;
+}
+
 #table__info .table__text-center {
   text-align: center;
 }

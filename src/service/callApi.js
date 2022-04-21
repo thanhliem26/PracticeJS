@@ -2,9 +2,8 @@ import axios from 'axios'
 let cancelToken
 
 function getDataApi(url, params, methodName, ms) {
-  console.log('call api run')
   if (typeof cancelToken != typeof undefined) {
-    cancelToken.cancel('Bấm chậm thôi con lợn này!')
+    cancelToken.cancel('Request is canceled!')
   }
   cancelToken = axios.CancelToken.source()
   const config = {
