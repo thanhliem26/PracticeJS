@@ -1,4 +1,3 @@
+build/
 node_modules/
-*.json
-webpack.config.js
-.editorconfig
+
